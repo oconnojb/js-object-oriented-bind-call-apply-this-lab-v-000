@@ -10,3 +10,8 @@ function setThisWithCall(fn, thisValue, arg) {
 function setThisWithApply(fn, t, args) {
   return fn.apply(t, args)
 }
+
+function returnNewFunctionOf(fn) {
+  let newFn = fn;
+  return newFn;
+}
