@@ -12,6 +12,6 @@ function setThisWithApply(fn, t, args) {
 }
 
 function returnNewFunctionOf(fn, thisValue) {
-  let newFn = fn;
+  let newFn = fn.call(thisValue);
   return newFn;
 }
